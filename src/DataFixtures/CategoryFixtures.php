@@ -26,7 +26,6 @@
             $manager->flush();
         }
 
-
 //    BOUCLE SIMPLE POUR FIXTURE
 //    public function load(ObjectManager $manager): void
 //    {
