@@ -6,8 +6,17 @@ body {
     background-color: #fff8f1;
 }
 
-img {
+.logo {
     height: 5rem;
+}
+
+div.media {
+    object-fit: cover;
+    max-width: 100%;
+}
+
+img.align-self-start {
+    height: 25rem;
 }
 
 @import "~bootstrap/scss/bootstrap";

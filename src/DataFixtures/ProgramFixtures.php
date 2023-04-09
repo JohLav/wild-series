@@ -20,7 +20,7 @@
             $program = new Program();
             $program->setTitle('Walking dead');
             $program->setSynopsis("Des zombies envahissent la terre");
-            $program->setPoster("/build/images/the-walking-dead.jpeg");
+            $program->setPoster("/build/images/the-walking-dead2.jpeg");
             $program->setCategory($this->getReference('category_Action'));
             $manager->persist($program);
     

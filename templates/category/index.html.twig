@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Toutes les catégories{% endblock %}
+
+{% block body %}
+
+    <h1>Toutes les catégories de la table category :</h1>
+
+    {% for category in categories %}
+        <div>
+            <p>{{ loop.index }} {{ category.name }}</p>
+            {# <a href="{{ path("category_show", { id: program.category_id }) }}">Voir la fiche</a> #}
+        </div>
+    {% else %}
+        Aucune catégorie trouvée.
+    {% endfor %}
+
+    {# Exemple de code pour afficher les tags associés à chaque article dans le template Twig #}
+    {#    {% for article in articles %} #}
+    {#        <h2>{{ article.title }}</h2> #}
+    {#        <p>{{ article.content }}</p> #}
+    {#        <ul> #}
+    {#            {% for tag in article.tags %} #}
+    {#                <li>{{ tag.name }}</li> #}
+    {#            {% endfor %} #}
+    {#        </ul> #}
+    {#    {% endfor %} #}
+
+    <a href="{{ path('app_index') }}">
+        Retour à l'accueil
+    </a>
+
+{% endblock %}
