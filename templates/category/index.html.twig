@@ -8,12 +8,17 @@
 
     {% for category in categories %}
         <div>
-            <p>{{ loop.index }} {{ category.name }}</p>
-            {# <a href="{{ path("category_show", { id: program.category_id }) }}">Voir la fiche</a> #}
+            <p>
+                <a href="{{ path("category_show", { categoryName: category.name }) }}">
+                {{ loop.index }} {{ category.name }}
+                </a>
+            </p>
         </div>
     {% else %}
         Aucune catégorie trouvée.
     {% endfor %}
+
+    {{ dump(categories) }}
 
     {# Exemple de code pour afficher les tags associés à chaque article dans le template Twig #}
     {#    {% for article in articles %} #}
