@@ -11,6 +11,7 @@
         const CATEGORIES = [
             'Action',
             'Animation',
+            'Comedy',
             'Drame',
             'Horreur',
             'Thriller'

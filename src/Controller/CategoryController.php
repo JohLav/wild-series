@@ -47,8 +47,6 @@
                 3,
                 0
             );
-
-//            dd($programs);
             
             return $this->render('category/show.html.twig', [
                 'category' => $category,

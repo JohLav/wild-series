@@ -1,6 +1,7 @@
 $dark: #005555;
 $light: #F8B400;
 $danger: darkred;
+$card-height: 100%;
 
 body {
     background-color: #fff8f1;
@@ -8,11 +9,6 @@ body {
 
 .logo {
     height: 5rem;
-}
-
-div.media {
-    object-fit: cover;
-    max-width: 100%;
 }
 
 img.align-self-start {
